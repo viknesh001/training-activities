@@ -1,0 +1,12 @@
+name: Register 
+description: ' Register '
+type: module
+
+package: Register
+# core: '8.x'
+
+
+version: '8.x-1.2'
+core: '8.x'
+project: 'example'
+
