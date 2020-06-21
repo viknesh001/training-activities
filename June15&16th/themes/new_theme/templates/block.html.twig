@@ -1,0 +1,20 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a block.
+ *
+ * Available variables:
+ * - plugin_id: The ID of the block implementation.
+ 
+ * @see template_preprocess_block()
+ *
+ * @ingroup themeable
+ */
+#}
+<div{{ attributes }}>
+  {{ training }}
+  
+  {% block content %}
+    {{ content }}
+  {% endblock %}
+</div>
