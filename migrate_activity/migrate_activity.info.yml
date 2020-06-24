@@ -1,0 +1,5 @@
+name: 'migrate_activity'
+type: module
+description: 'Testing the Drupal Migration Activity'
+core: 8.x
+package: 'Migration Activity'

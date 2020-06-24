@@ -1,0 +1,13 @@
+id: vegetables
+label: Vegetables
+migration_group: migrate_activity
+source:
+  plugin: vegetables
+  key: default
+destination:
+  plugin: entity:taxonomy_term
+process:
+  vid:
+    plugin: default_value
+    default_value: tags
+  name: name
