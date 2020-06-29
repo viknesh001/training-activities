@@ -1,0 +1,16 @@
+
+activityform.activityform_controller_display:
+  path: '/activityforms'
+  defaults:
+    _controller: '\Drupal\activityform\Controller\AddController::display'
+    _title: 'display form'
+  requirements:
+    _permission: 'access content'
+
+activityform.activityform_form:
+  path: '/activityform/form/activityform'
+  defaults:
+    _form: '\Drupal\activityform\Form\ActivityForm'
+    _title: 'Add Form'
+  requirements:
+    _permission: 'access content'

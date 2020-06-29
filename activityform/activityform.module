@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * @file
+ * 
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+
+function activityform_theme() {
+  // We use a template file to allow for translation of blocks of content.
+  // Therefore we need to add this content at the theming layer.
+  return [
+    'activityform_description' => [
+      'template' => 'description',
+      'variables' => [],
+    ],
+  ];
+}
