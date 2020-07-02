@@ -1,0 +1,36 @@
+
+userform.userform_controller_display:
+  path: '/userform'
+  defaults:
+    _controller: '\Drupal\userform\Controller\UserController::display'
+    _title: 'display'
+  requirements:
+    _permission: 'access content'
+
+userform.userform_form:
+  path: '/userform/userformdetails'
+  defaults:
+    _form: '\Drupal\userform\Form\UserForm'
+    _title: 'user form'
+  requirements:
+    _access: 'TRUE'
+  
+
+userform.display_table_controller_display:
+  path: '/userform/userlisting'
+  defaults:
+    _controller: '\Drupal\userform\Controller\UserlistingController::display'
+    _title: 'display'
+  requirements:
+    _permission: 'access content'
+    
+userform.user_form:
+  path: '/userform/form/user'
+  defaults:
+    _controller: '\Drupal\userform\Controller\UserDisplayController::display'
+    _title: 'User Details'
+  requirements:
+    _access: 'TRUE'
+
+
+  

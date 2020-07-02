@@ -1,0 +1,29 @@
+<?php
+
+function userform_schema() {
+  $schema['userform'] = array(
+    'fields' => array(
+      'id'=>array(
+        'type'=>'serial',
+        'not null' => TRUE,
+      ),
+      
+      'mobilenumber'=>array(
+        'type' => 'varchar',
+        'length' => 40,
+        'not null' => TRUE,
+      ),
+      
+      'address'=>array(
+        'type' => 'varchar',
+        'length' => 25,
+        'not null' => TRUE,
+      ),
+     
+    ),
+    'primary key' => array('id'),
+  );
+
+  return $schema;
+
+}
